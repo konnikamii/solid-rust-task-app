@@ -1,0 +1,24 @@
+{
+  "printWidth": 120,
+  "endOfLine": "lf",
+  "useTabs": false,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "semi": false,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "proseWrap": "always",
+
+  "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+  "importOrder": [
+    "^solid-js$",
+    "<THIRD_PARTY_MODULES>",
+    "^(@Components|@Hooks|@Routes|@Utils|@Src)/.*$",
+    "^(@Css|@Styles)/.*$",
+    "\\.(css|scss)$",
+    "^(\\.|\\.\\.)/(.(?!.(css|scss)))*$"
+  ],
+  "tailwindStylesheet": "./src/app.css"
+}

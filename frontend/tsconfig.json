@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "allowJs": true,
+    "noEmit": true,
+    "strict": true,
+    "types": ["vite/client"],
+    "isolatedModules": true,
+    "paths": {
+      "@Src/*": ["./src/*"],
+      "@Components/*": ["./src/components/*"],
+      "@Lib/*": ["./src/lib/*"],
+      "@Api/*": ["./src/lib/api/*"],
+      "@Utils/*": ["./src/lib/utils/*"],
+      "@Hooks/*": ["./src/lib/hooks/*"]
+    }
+  }
+}
