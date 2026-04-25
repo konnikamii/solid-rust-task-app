@@ -1,4 +1,4 @@
-import { JSX, mergeProps, splitProps } from 'solid-js'
+import { JSX } from 'solid-js'
 
 type Props = JSX.SvgSVGAttributes<SVGSVGElement> & {
   width?: string | number
@@ -6,9 +6,6 @@ type Props = JSX.SvgSVGAttributes<SVGSVGElement> & {
 }
 
 export default function ThemeToggleDark(props: Props) {
-  // const merged = mergeProps({ width: 32, height: 32 }, props)
-  // const [local, restProps] = splitProps(merged, ['width', 'height'])
-
   return (
     <svg viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' {...props}>
       <path

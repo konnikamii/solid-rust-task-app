@@ -1,6 +1,6 @@
-import { createEffect, createSignal, onMount, Show } from 'solid-js'
-import ThemeToggleDark from './svgs/ThemeToggleDark'
-import ThemeToggleLight from './svgs/ThemeToggleLight'
+import { createSignal, onMount } from 'solid-js'
+import ThemeToggleDark from '@Components/svgs/ThemeToggleDark'
+import ThemeToggleLight from '@Components/svgs/ThemeToggleLight'
 
 const THEME_STORAGE_KEY = 'theme'
 
@@ -12,6 +12,7 @@ export default function ThemeToggler() {
     if (typeof document === 'undefined' || !document.body) return
     document.body.classList.toggle('dark', dark)
     document.body.style.colorScheme = dark ? 'dark' : 'light'
+    document.body.setAttribute('data-theme', dark ? 'dark' : 'light')
     localStorage.setItem(THEME_STORAGE_KEY, dark ? 'dark' : 'light')
   }
 

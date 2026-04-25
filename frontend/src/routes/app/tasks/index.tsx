@@ -1,3 +1,5 @@
-export default function Tasks() {
-  return <div>Tasks</div>
+import Tasks from '@Src/components/routes/app/tasks'
+
+export default function TasksPage() {
+  return <Tasks />
 }

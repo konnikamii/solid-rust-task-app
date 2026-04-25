@@ -1,3 +1,5 @@
-export default function Login() {
-  return <div>login</div>
+import Login from '@Src/components/routes/login'
+
+export default function LoginPage() {
+  return <Login />
 }

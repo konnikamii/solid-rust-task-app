@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  plugins: [tailwindcss(), solidStart(), nitro()],
+  plugins: [solidStart(), tailwindcss(), nitro()],
   resolve: {
     alias: {
       '@Src': '/src',
@@ -16,6 +16,6 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3001,
+    port: 3000,
   },
 })

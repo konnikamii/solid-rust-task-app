@@ -1,3 +1,5 @@
-export default function Settings() {
-  return <div>Settings</div>
+import Settings from '@Src/components/routes/app/settings'
+
+export default function SettingsPage() {
+  return <Settings />
 }
